@@ -1,0 +1,132 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "学バス時刻表",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "checkNow",
+                    "slots": [
+                        {
+                            "name": "busstops",
+                            "type": "busstops"
+                        },
+                        {
+                            "name": "to",
+                            "type": "busstops"
+                        },
+                        {
+                            "name": "from",
+                            "type": "busstops"
+                        }
+                    ],
+                    "samples": [
+                        "{to} 行きの時間は",
+                        "{to} 行きの時間を調べて",
+                        "{to} 行きのバスの時間は",
+                        "{to} 行きのバスの時間を調べて",
+                        "{to} 行きのバスの時間を教えて",
+                        "{to} 行きの出発時刻は",
+                        "{to} 行きの出発時刻を教えて",
+                        "{to} 行きの出発時刻を調べて",
+                        "{to} に行くバスの時間は",
+                        "{to} へ行くバスの時間は",
+                        "{to} 着のバスの時間は",
+                        "{to} 着のバスの時間を教えて",
+                        "{to} 着のバスはいつ出発する",
+                        "{to} に行きたい",
+                        "{from} 発の時間は",
+                        "{from} 発のバスの時間は",
+                        "{from} 発のバスの時間を教えて",
+                        "{from} 発のバスの時間を調べて",
+                        "{from} 発の出発時刻は",
+                        "{from} 発の出発時刻を教えて",
+                        "{from} からのバスの時間は",
+                        "{from} からのバスの時間を教えて",
+                        "{from} から出発するバスの時間は",
+                        "{from} から出発するバスの時間を教えて",
+                        "{from} からバスに乗りたい"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "busstops",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "厚生棟前",
+                                "synonyms": [
+                                    "学食前",
+                                    "厚生棟"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "図書館棟前",
+                                "synonyms": [
+                                    "メディアセンター前",
+                                    "メディアセンター",
+                                    "図書館棟",
+                                    "図書館",
+                                    "図書館前"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "学生会館",
+                                "synonyms": [
+                                    "会館",
+                                    "会館前",
+                                    "寮",
+                                    "学生寮",
+                                    "学生会館前"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "八王子みなみ野",
+                                "synonyms": [
+                                    "南の",
+                                    "みなみ野",
+                                    "みなみ野駅",
+                                    "南の駅",
+                                    "八王子みなみ野駅",
+                                    "八王子南の駅",
+                                    "八王子南の"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "八王子駅南口",
+                                "synonyms": [
+                                    "八王子",
+                                    "八王子駅"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
